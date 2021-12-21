@@ -26,9 +26,9 @@ namespace Poo.Api.Core.Domain.ProductAgg.Entities;
         }
 
         public long Id { get; private set; }
-        public string ExternalId { get; private set; }
-        public string Nome { get; private set; }
-        public string Status { get; private set; }
+        public string? ExternalId { get; private set; }
+        public string? Nome { get; private set; }
+        public string? Status { get; private set; }
         public long Valor { get; private set; }
 
         public void Atualizar(IAtualizarProduto atualizarProduto)
