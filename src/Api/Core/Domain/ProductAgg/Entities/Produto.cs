@@ -6,8 +6,8 @@ using Poo.Api.Core.Application.ProductAgg.Contracts;
 using Poo.Api.Core.Domain.ProductAgg.Events;
 using Poo.Api.Core.Domain.Shared;
 
-namespace Poo.Api.Core.Domain.ProductAgg.Entities
-{
+namespace Poo.Api.Core.Domain.ProductAgg.Entities;
+
     public class Produto : IAggregateRoot
     {
         private ICollection<INotification> _domainEvents;
@@ -57,4 +57,3 @@ namespace Poo.Api.Core.Domain.ProductAgg.Entities
             _domainEvents.Clear();
         }
     }
-}

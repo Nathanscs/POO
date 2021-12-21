@@ -3,8 +3,8 @@ using Poo.Api.Core.Domain.EstoqueAgg.Entities;
 using Poo.Api.Core.Domain.EstoqueAgg.Repositories;
 using Poo.Api.Core.Infrastructure.Shared;
 
-namespace Poo.Api.Core.Infrastructure.EstoqueAgg.Repositories
-{
+namespace Poo.Api.Core.Infrastructure.EstoqueAgg.Repositories;
+
     public class EstoqueRepository : IEstoqueRepository
     {
         private readonly PedidoDbContext _context;
@@ -24,4 +24,3 @@ namespace Poo.Api.Core.Infrastructure.EstoqueAgg.Repositories
             _context.EstoqueItens.Add(estoqueItem);
         }
     }
-}

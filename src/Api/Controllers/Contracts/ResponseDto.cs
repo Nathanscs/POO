@@ -1,7 +1,5 @@
-using System;
+namespace Poo.Api.Controllers.Contracts;
 
-namespace Poo.Api.Controllers.Contracts
-{
     public class ResponseDto
     {
         public ResponseDto(object data)
@@ -30,4 +28,3 @@ namespace Poo.Api.Controllers.Contracts
             public object Data { get; }
         }
     }
-}

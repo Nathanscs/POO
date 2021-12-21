@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using MediatR;
+﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Poo.Api.Core.Domain.EstoqueAgg.Entities;
 using Poo.Api.Core.Domain.ProductAgg.Entities;

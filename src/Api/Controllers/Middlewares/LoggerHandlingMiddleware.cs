@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Poo.Api.Controllers.Middlewares
-{
+namespace Poo.Api.Controllers.Middlewares;
+
     public class LoggerHandlingMiddleware
     {
         private readonly RequestDelegate _next;
@@ -31,4 +31,3 @@ namespace Poo.Api.Controllers.Middlewares
             }
         }
     }
-}

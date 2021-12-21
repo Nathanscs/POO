@@ -1,12 +1,10 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 using Poo.Api.Core.Domain.EstoqueAgg.Entities;
 using Poo.Api.Core.Domain.EstoqueAgg.Repositories;
 using Poo.Api.Core.Domain.ProductAgg.Events;
 
-namespace Poo.Api.Core.Domain.EstoqueAgg.Events.Handlers
-{
+namespace Poo.Api.Core.Domain.EstoqueAgg.Events.Handlers;
+
     public class AdicionarItemEstoque : INotificationHandler<ProdutoCriado>
     {
         private readonly IEstoqueRepository _estoqueRepository;
@@ -22,4 +20,3 @@ namespace Poo.Api.Core.Domain.EstoqueAgg.Events.Handlers
             return Task.CompletedTask;
         }
     }
-}

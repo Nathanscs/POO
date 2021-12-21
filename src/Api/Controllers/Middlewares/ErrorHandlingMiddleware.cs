@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Poo.Api.Controllers.Contracts;
 using Poo.Api.Core.Domain.Shared.Exceptions;
 
-namespace Poo.Api.Controllers.Middlewares
-{
+namespace Poo.Api.Controllers.Middlewares;
+
     public class ErrorHandlingMiddleware
     {
         private readonly RequestDelegate _next;
@@ -37,4 +37,3 @@ namespace Poo.Api.Controllers.Middlewares
             }
         }
     }
-}

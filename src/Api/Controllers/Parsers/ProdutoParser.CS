@@ -5,8 +5,8 @@ using Poo.Api.Core.Application.ProductAgg.Parsers;
 using Poo.Api.Core.Domain.EstoqueAgg.Repositories;
 using Poo.Api.Core.Domain.ProductAgg.Entities;
 
-namespace Poo.Api.Controllers.Parsers
-{
+namespace Poo.Api.Controllers.Parsers;
+
     public class ProdutoParser : IParser<Produto, IProdutoView>
     {
         public IProdutoView Parse(Produto produto)
@@ -44,4 +44,3 @@ namespace Poo.Api.Controllers.Parsers
             };
         }
     }
-}

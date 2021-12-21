@@ -1,7 +1,5 @@
-﻿using System;
+﻿namespace Poo.Api.Core.Domain.Shared.Exceptions;
 
-namespace Poo.Api.Core.Domain.Shared.Exceptions
-{
     public sealed class NotFoundException : Exception
     {
         public NotFoundException(string entityName, string id) : base($"O {entityName} não foi encontrado.")
@@ -9,4 +7,3 @@ namespace Poo.Api.Core.Domain.Shared.Exceptions
             Data.Add(nameof(id), id);
         }
     }
-}

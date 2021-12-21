@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
+﻿using System.Collections.Immutable;
 using Poo.Api.Core.Domain.ProductAgg.Entities;
 using Poo.Api.Core.Domain.ProductAgg.Repositories;
 using Poo.Api.Core.Infrastructure.Shared;
 
-namespace Poo.Api.Core.Infrastructure.ProductAgg.Repositories
-{
+namespace Poo.Api.Core.Infrastructure.ProductAgg.Repositories;
+
     public class ProdutoRepositorio : IProdutoRepositorio
     {
         private readonly PedidoDbContext _context;
@@ -39,4 +36,3 @@ namespace Poo.Api.Core.Infrastructure.ProductAgg.Repositories
             return _context.Set<Produto>().FirstOrDefault(x => x.ExternalId == id);
         }
     }
-}

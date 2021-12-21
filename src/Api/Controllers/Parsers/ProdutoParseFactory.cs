@@ -2,8 +2,8 @@ using Poo.Api.Core.Application.ProductAgg.Contracts;
 using Poo.Api.Core.Application.ProductAgg.Parsers;
 using Poo.Api.Core.Domain.ProductAgg.Entities;
 
-namespace Poo.Api.Controllers.Parsers
-{
+namespace Poo.Api.Controllers.Parsers;
+
     public class ProdutoParseFactory : IProdutoParseFactory
     {
         private readonly ProdutoReportParser _produtoReportParser;
@@ -23,4 +23,3 @@ namespace Poo.Api.Controllers.Parsers
             return _produtoReportParser;
         }
     }
-}

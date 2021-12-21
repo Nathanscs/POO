@@ -1,7 +1,6 @@
 ﻿using Poo.Api.Core.Domain.ProductAgg.Entities;
 
-namespace Poo.Api.Core.Domain.EstoqueAgg.Entities
-{
+namespace Poo.Api.Core.Domain.EstoqueAgg.Entities;
     public class EstoqueItem
     {
         private EstoqueItem()
@@ -23,4 +22,3 @@ namespace Poo.Api.Core.Domain.EstoqueAgg.Entities
             QuantidadeDisponivel = quantidade;
         }
     }
-}

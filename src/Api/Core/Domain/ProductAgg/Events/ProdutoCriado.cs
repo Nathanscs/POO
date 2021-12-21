@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using Poo.Api.Core.Domain.ProductAgg.Entities;
 
-namespace Poo.Api.Core.Domain.ProductAgg.Events
-{
+namespace Poo.Api.Core.Domain.ProductAgg.Events;
+
     public class ProdutoCriado : INotification
     {
         public ProdutoCriado(Produto produto)
@@ -12,4 +12,3 @@ namespace Poo.Api.Core.Domain.ProductAgg.Events
 
         public Produto Produto { get; }
     }
-}

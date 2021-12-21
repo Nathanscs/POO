@@ -9,8 +9,8 @@ using Poo.Api.Core.Domain.ProductAgg.Repositories;
 using Poo.Api.Core.Domain.Shared.Exceptions;
 using Poo.Api.Core.Domain.Shared.Repositories;
 
-namespace Poo.Api.Core.Application.ProductAgg.AppServices
-{
+namespace Poo.Api.Core.Application.ProductAgg.AppServices;
+
     public class ProdutoAppService
     {
         private readonly IProdutoRepositorio _repositorio;
@@ -80,4 +80,3 @@ namespace Poo.Api.Core.Application.ProductAgg.AppServices
             _unitOfWork.SaveChanges();
         }
     }
-}

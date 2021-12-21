@@ -1,5 +1,5 @@
-namespace Poo.Api.Core.Application.ProductAgg.Contracts
-{
+namespace Poo.Api.Core.Application.ProductAgg.Contracts;
+
     public interface IProdutoView
     {
         string Id { get; }
@@ -8,4 +8,3 @@ namespace Poo.Api.Core.Application.ProductAgg.Contracts
         int QuantidadeDisponivel { get; }
         string Status { get; }
     }
-}
